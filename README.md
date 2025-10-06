@@ -1,6 +1,6 @@
 # Fine-Tuning with Hugging Face
 
-This repository contains the code and resources for **Chapter 9: Fine-Tuning AI Models** from the Udemy course *[Understanding, Testing, and Fine-tuning AI Models with HuggingFace](https://www.udemy.com/course/ai-with-huggingface/)*.
+This repository contains the code and resources for **Chapter 9: Fine-Tuning AI Models** from the Udemy course _[Understanding, Testing, and Fine-tuning AI Models with HuggingFace](https://www.udemy.com/course/ai-with-huggingface/)_.
 
 🎯 This project demonstrates how to fine-tune bert model using the **Hugging Face Transformers library**, building upon foundational concepts in machine learning, NLP, and model evaluation covered in earlier chapters.
 
@@ -10,14 +10,14 @@ This repository contains the code and resources for **Chapter 9: Fine-Tuning AI 
 
 The model fine-tuned has been uploaded and is publicly available on Hugging Face:
 
-👉 **[yilong-ai/bert-base-uncased-text-classification-model](https://huggingface.co/yilong-ai/bert-base-uncased-text-classification-model)**
+👉 **[yilong-ai/bert-base-uncased-text-classification](https://huggingface.co/yilong-ai/bert-base-uncased-text-classification)**
 
 You can load it directly using the `transformers` library:
 
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-model_name = "yilong-ai/bert-base-uncased-text-classification-model"
+model_name = "yilong-ai/bert-base-uncased-text-classification"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 ```
