@@ -6,7 +6,25 @@ This repository contains the code and resources for **Chapter 9: Fine-Tuning AI 
 
 ---
 
-## 📚 What's in the file
+## 🚀 Fine-Tuned Model Available on Hugging Face Hub
+
+The model fine-tuned has been uploaded and is publicly available on Hugging Face:
+
+👉 **[yilong-ai/bert-base-uncased-text-classification-model](https://huggingface.co/yilong-ai/bert-base-uncased-text-classification-model)**
+
+You can load it directly using the `transformers` library:
+
+```python
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+
+model_name = "yilong-ai/bert-base-uncased-text-classification-model"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForSequenceClassification.from_pretrained(model_name)
+```
+
+---
+
+## 📚 What's in this project
 
 - Understand the concept and importance of **fine-tuning pre-trained language models**.
 - Learn how to prepare datasets for downstream tasks (e.g., text classification, sentiment analysis).
